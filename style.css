@@ -1,0 +1,97 @@
+/* Brew Haven – Classic Coffee autumn palette */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #F5EBDD;
+    color: #3E2723;
+    line-height: 1.6;
+}
+header {
+    background: #3E2723;
+    color: #F5EBDD;
+    padding: 18px 5%;
+    text-align: center;
+}
+.logo { margin: 0 0 12px; color: #F5EBDD; letter-spacing: 1px; }
+nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+nav a {
+    color: #F5EBDD; text-decoration: none; padding: 7px 10px; border-radius: 5px;
+}
+nav a:hover { background: #B5651D; color: #FFFFFF; }
+.hero {
+    min-height: 350px;
+    background-image: linear-gradient(rgba(62,39,35,.42), rgba(62,39,35,.42)),
+    url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; color: #F5EBDD; padding: 30px;
+}
+.hero h2 { font-size: 38px; margin-bottom: 8px; color: #F5EBDD; }
+.hero p { font-size: 18px; }
+.button {
+    display: inline-block; background: #B5651D; color: #FFFFFF;
+    text-decoration: none; padding: 11px 20px; margin: 6px;
+    border-radius: 7px; border: 2px solid #B5651D;
+}
+.button:hover { background: #3E2723; border-color: #3E2723; }
+.section {
+    max-width: 950px; margin: 25px auto; padding: 24px;
+    background: #FFF9F0; border: 1px solid #C8A27A; border-radius: 9px;
+}
+.section h2, .page-heading h2 { color: #3E2723; }
+.page-heading { text-align: center; padding: 28px 15px 5px; }
+.page-heading p { color: #76513B; }
+.favourites li, .menu-categories li { margin: 8px 0; }
+.favourites li::marker, .menu-categories li::marker { color: #B5651D; }
+.menu-categories { display: flex; flex-wrap: wrap; gap: 12px 28px; padding-left: 22px; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; background: #FFF9F0; }
+th, td { border: 1px solid #C8A27A; padding: 11px; text-align: left; }
+th { background: #3E2723; color: #F5EBDD; }
+tr:nth-child(even) { background: #F1E2CF; }
+a { color: #9A4F16; }
+.about-layout { display: flex; align-items: center; gap: 22px; }
+.about-layout img { width: 45%; border: 4px solid #C8A27A; border-radius: 8px; }
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.gallery img {
+    width: 100%; height: 230px; object-fit: cover;
+    border: 4px solid #C8A27A; border-radius: 9px; cursor: pointer;
+    transition: transform .3s, box-shadow .3s;
+}
+.gallery img:hover { transform: scale(1.04); box-shadow: 0 7px 18px rgba(62,39,35,.25); }
+.image-viewer {
+    display: none; position: fixed; z-index: 10; inset: 0;
+    background: rgba(35,20,16,.92); justify-content: center;
+    align-items: center; padding: 25px;
+}
+.image-viewer img { max-width: 90%; max-height: 85%; border: 5px solid #C8A27A; border-radius: 9px; }
+.close { position: absolute; top: 15px; right: 30px; color: #F5EBDD; font-size: 40px; cursor: pointer; }
+.small-note { color: #76513B; font-size: 13px; }
+footer { background: #3E2723; color: #F5EBDD; text-align: center; padding: 17px; margin-top: 35px; }
+@media (max-width: 650px) {
+    .about-layout { display: block; }
+    .about-layout img { width: 100%; margin-bottom: 12px; }
+    .gallery { grid-template-columns: 1fr; }
+    .hero h2 { font-size: 28px; }
+    .section { margin: 18px 12px; }
+}
+
+
+/* Frame area used on the main index page */
+.frame-section {
+    max-width: 1100px;
+    margin: 22px auto;
+    padding: 0 18px;
+}
+.frame-title, .frame-description {
+    text-align: center;
+}
+.frame-title { color: #3E2723; }
+.cafe-frame {
+    width: 100%;
+    height: 720px;
+    border: 3px solid #C8A27A;
+    border-radius: 9px;
+    background: #F5EBDD;
+}

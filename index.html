@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven | Classic Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Brew Haven</h1>
+        <p>Fresh coffee, warm corners.</p>
+        <nav>
+            <a href="home.html" target="cafeFrame">Home</a>
+            <a href="about.html" target="cafeFrame">About Us</a>
+            <a href="menu.html" target="cafeFrame">Menu</a>
+            <a href="gallery.html" target="cafeFrame">Gallery</a>
+        </nav>
+    </header>
+
+    <main class="frame-section">
+        <h2 class="frame-title">Welcome to Brew Haven</h2>
+        <p class="frame-description">Choose a section above. The page will open in the frame below.</p>
+
+        <!-- IFRAME: a modern, supported way to display another HTML page inside this page.
+             The navigation links above use target="cafeFrame" to load pages here. -->
+        <iframe
+            src="home.html"
+            name="cafeFrame"
+            title="Brew Haven website pages"
+            class="cafe-frame">
+        </iframe>
+    </main>
+
+    <footer>
+        <p>Brew Haven Cafe | © 2026 All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Cafe | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Brew Haven</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="order.html">Order Online</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h2>Our Gallery</h2>
+            <p>A glimpse of the food and moments at Brew Haven.</p>
+        </section>
+
+        <section class="section">
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Coffee cup" onclick="showImage(this)">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Pizza" onclick="showImage(this)">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" alt="Delicious meal" onclick="showImage(this)">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Fresh bakery" onclick="showImage(this)">
+            </div>
+            <p class="small-note">Click any picture to view it larger.</p>
+        </section>
+    </main>
+
+    <!-- Image preview box -->
+    <div id="image-viewer" class="image-viewer" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img id="large-image" src="" alt="Larger gallery view">
+    </div>
+
+    <footer>
+        <p>Brew Haven Cafe | © 2026 All rights reserved.</p>
+    </footer>
+    <script src="gallery.js"></script>
+</body>
+</html>
